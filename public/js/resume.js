@@ -19,7 +19,7 @@ function loadHtml() {
 function saveHtml() {
 	var html = mainHtml;
 
-	$.post('/resume', {
+	$.post('/index.php/resume', {
 		html: html
 	}).then((res) => {
 		console.log(res);
